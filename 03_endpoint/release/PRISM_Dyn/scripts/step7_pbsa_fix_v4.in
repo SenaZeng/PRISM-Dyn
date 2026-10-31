@@ -1,0 +1,20 @@
+# ─────────────────────────────────────────────────────────
+# PBSA 修复 v4 — fillratio=2.0 + radiopt=1 (双重修复)
+#
+# 同时解决：
+#   1. 不兼容原子类型 (radiopt=1)
+#   2. 内存压力 (fillratio=2.0)
+# ─────────────────────────────────────────────────────────
+&general
+  startframe=5001,
+  endframe=10000,
+  interval=25,
+  verbose=2,
+  keep_files=0,
+/
+&pb
+  istrng=0.150,
+  fillratio=2.0,
+  inp=2,
+  radiopt=1,
+/

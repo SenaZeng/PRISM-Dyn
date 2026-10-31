@@ -1,0 +1,11 @@
+{
+ "rmsd_prot_mean": 2.1252,
+ "rmsd_lig_mean": 36.7853,
+ "mindist_mean": 0.4712,
+ "hbond_occupancy": 0.7645,
+ "n_frames": 501,
+ "start_frame": 5000,
+ "n_total": 10001,
+ "ligand_resname": "MOL",
+ "n_ligand_atoms": 67
+}

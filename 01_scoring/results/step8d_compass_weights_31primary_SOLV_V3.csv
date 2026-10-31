@@ -1,0 +1,7 @@
+axis,partner,max_abs_r,independence,phys_importance,direction,raw_w,W_31primary,anchor
+d_min,rmsd_lig_mean,0.4432,0.5568,4,-1,-2.227240640249844,-2.0,True
+H_occ,mindist_mean,0.4403,0.5597,3,1,1.6791405017294752,1.5078,False
+RMSD_prot,mindist_mean,0.3192,0.6808,2,-1,-1.3616291932473845,-1.2227,False
+dG_PBSA,rmsd_lig_mean,0.5698,0.4302,5,-1,-2.151209677419355,-1.9317,False
+sigma_PBSA,rmsd_lig_mean,0.2907,0.7093,2,-1,-1.418548387096774,-1.2738,False
+RMSD_lig,dG_PBSA_mean,0.5698,0.4302,3,-1,-1.2907258064516132,-1.159,False

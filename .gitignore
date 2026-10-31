@@ -1,0 +1,31 @@
+# 本文件由 stage_githubdyn.py v1.4 生成，每次组装重写。
+# 第二道防线：即便误拷，也不入 git
+*.cpt
+*.edr
+*.gz
+*.h5
+*.log
+*.npz
+*.pkl
+*.pth
+*.tar
+*.tng
+*.trr
+*.xtc
+*.zip
+
+# npz 的窄例外（见 README「逐帧 d_dyad 序列」一节）。
+# 上面的 `*.npz` 本会把这 177 份逐帧序列一并挡在 git 之外；
+# 它们是读者检验 5.0 Å 这一事后阈值的唯一凭据，故逐目录放行。
+!**/aud_b81_scope9_series/*.npz
+!**/aud_cross_site_occupancy_series/*.npz
+!**/aud_main_site_occupancy_his163_series/*.npz
+!**/aud_main_site_occupancy_series/*.npz
+
+# Jupyter 的 checkpoint 目录 —— 它不是产物，不入存档亦不入 git
+.ipynb_checkpoints/
+
+# 隐患文件（理由见 EXCLUSIONS.md）
+step8c_compass_v3_ranking_SOLV.csv
+permutation_test_report_SOLV.txt
+phase3_cross_dG_newTier1_SOLV.csv

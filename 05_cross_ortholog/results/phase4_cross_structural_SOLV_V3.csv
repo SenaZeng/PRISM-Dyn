@@ -1,0 +1,13 @@
+mol_dir,rmsd_prot_mean,rmsd_lig_mean,mindist_mean,hbond_occupancy,n_rep,mol_id,target
+pool_mol_001__3V3M__primary,2.3086,10.0191,0.2489,0.7252,3,pool_mol_001,3V3M
+pool_mol_001__4YLU__primary,2.3695,3.5272,0.2071,0.8357,3,pool_mol_001,4YLU
+pool_mol_004__3V3M__primary,2.2243,6.9312,0.1853,0.9993,3,pool_mol_004,3V3M
+pool_mol_004__4YLU__primary,1.8995,2.8675,0.1852,1.0,3,pool_mol_004,4YLU
+pool_mol_012__3V3M__primary,2.3549,2.9065,0.1903,0.5649,3,pool_mol_012,3V3M
+pool_mol_012__4YLU__primary,1.7538,4.1018,0.2008,0.2661,3,pool_mol_012,4YLU
+pool_mol_057__3V3M__primary,2.3551,6.281,0.1772,0.9814,3,pool_mol_057,3V3M
+pool_mol_057__4YLU__primary,1.8718,1.5015,0.1759,0.9993,3,pool_mol_057,4YLU
+pool_mol_074__3V3M__primary,2.1476,3.2194,0.1957,0.5023,3,pool_mol_074,3V3M
+pool_mol_074__4YLU__primary,2.086,7.8684,0.2111,0.3021,3,pool_mol_074,4YLU
+pool_mol_279__3V3M__primary,2.4737,4.2706,0.1847,0.8709,3,pool_mol_279,3V3M
+pool_mol_279__4YLU__primary,1.8098,19.0832,0.2048,0.9288,3,pool_mol_279,4YLU

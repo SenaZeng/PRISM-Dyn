@@ -1,0 +1,167 @@
+{
+  "module": "node04_redock_control",
+  "version": "1.0",
+  "created_at_utc": "2026-07-29T12:35:37Z",
+  "rmsd_pass_angstrom": 2.0,
+  "rmsd_method": "rdMolAlign.CalcRMS (symmetry-aware, NO superposition), heavy atoms",
+  "vina": "/mnt/hpc/home/wanghongmei/apps/vina/vina_1.2.7_linux_x86_64",
+  "vina_sha256": "f31f774f723bba7bbe6e9d1c47577020eea9a8da16424284c043d22593570644",
+  "exhaustiveness": 32,
+  "num_modes": 9,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "targets": {
+    "6W63": {
+      "cocrystal_ligand": "X77",
+      "n_heavy_atoms": 34,
+      "ligand_prep_cmd": "/mnt/hpc/home/wanghongmei/anaconda3/envs/md_env/bin/mk_prepare_ligand.py -i /mnt/hpc/home/wanghongmei/lang2/results/04_docking/redock_control/6W63/X77_ref.sdf -o /mnt/hpc/home/wanghongmei/lang2/results/04_docking/redock_control/6W63/X77.pdbqt",
+      "bond_order_template": "RCSB X77_ideal.sdf",
+      "template_sha256": "7fe4f261d60bae89265596cbc7fe7a8ad2b113aaebe37f56565275e3ee5daffb",
+      "per_seed": [
+        {
+          "seed": 42,
+          "affinity_best": -8.516,
+          "rmsd_best_pose": 1.256,
+          "rmsd_min_over_modes": 1.256,
+          "n_modes": 9
+        },
+        {
+          "seed": 43,
+          "affinity_best": -8.537,
+          "rmsd_best_pose": 1.308,
+          "rmsd_min_over_modes": 1.308,
+          "n_modes": 9
+        },
+        {
+          "seed": 44,
+          "affinity_best": -8.526,
+          "rmsd_best_pose": 1.245,
+          "rmsd_min_over_modes": 1.245,
+          "n_modes": 9
+        },
+        {
+          "seed": 45,
+          "affinity_best": -8.51,
+          "rmsd_best_pose": 1.24,
+          "rmsd_min_over_modes": 1.24,
+          "n_modes": 9
+        },
+        {
+          "seed": 46,
+          "affinity_best": -8.517,
+          "rmsd_best_pose": 1.251,
+          "rmsd_min_over_modes": 1.251,
+          "n_modes": 9
+        }
+      ],
+      "rmsd_top_median": 1.251,
+      "n_seeds_within_2A": 5,
+      "n_seeds": 5,
+      "reference_affinity_mean": -8.521,
+      "verdict": "PASS"
+    },
+    "3V3M": {
+      "cocrystal_ligand": "0EN",
+      "n_heavy_atoms": 32,
+      "ligand_prep_cmd": "/mnt/hpc/home/wanghongmei/anaconda3/envs/md_env/bin/mk_prepare_ligand.py -i /mnt/hpc/home/wanghongmei/lang2/results/04_docking/redock_control/3V3M/0EN_ref.sdf -o /mnt/hpc/home/wanghongmei/lang2/results/04_docking/redock_control/3V3M/0EN.pdbqt",
+      "bond_order_template": "RCSB 0EN_ideal.sdf",
+      "template_sha256": "c19f9a878d3f2cb5a5ba2b4a8ea26a054c2169e4d8f89d9f774efc6fc244f352",
+      "per_seed": [
+        {
+          "seed": 42,
+          "affinity_best": -7.671,
+          "rmsd_best_pose": 0.644,
+          "rmsd_min_over_modes": 0.644,
+          "n_modes": 9
+        },
+        {
+          "seed": 43,
+          "affinity_best": -7.701,
+          "rmsd_best_pose": 0.647,
+          "rmsd_min_over_modes": 0.647,
+          "n_modes": 9
+        },
+        {
+          "seed": 44,
+          "affinity_best": -7.736,
+          "rmsd_best_pose": 0.609,
+          "rmsd_min_over_modes": 0.609,
+          "n_modes": 9
+        },
+        {
+          "seed": 45,
+          "affinity_best": -7.611,
+          "rmsd_best_pose": 0.696,
+          "rmsd_min_over_modes": 0.696,
+          "n_modes": 9
+        },
+        {
+          "seed": 46,
+          "affinity_best": -7.678,
+          "rmsd_best_pose": 0.65,
+          "rmsd_min_over_modes": 0.65,
+          "n_modes": 9
+        }
+      ],
+      "rmsd_top_median": 0.647,
+      "n_seeds_within_2A": 5,
+      "n_seeds": 5,
+      "reference_affinity_mean": -7.679,
+      "verdict": "PASS"
+    },
+    "4YLU": {
+      "cocrystal_ligand": "R30",
+      "n_heavy_atoms": 30,
+      "ligand_prep_cmd": "/mnt/hpc/home/wanghongmei/anaconda3/envs/md_env/bin/mk_prepare_ligand.py -i /mnt/hpc/home/wanghongmei/lang2/results/04_docking/redock_control/4YLU/R30_ref.sdf -o /mnt/hpc/home/wanghongmei/lang2/results/04_docking/redock_control/4YLU/R30.pdbqt",
+      "bond_order_template": "RCSB R30_ideal.sdf",
+      "template_sha256": "e38affb4300e9bbbe730f16652eee63a3086809029f81f159011f59cd1f8ed28",
+      "per_seed": [
+        {
+          "seed": 42,
+          "affinity_best": -8.043,
+          "rmsd_best_pose": 0.883,
+          "rmsd_min_over_modes": 0.883,
+          "n_modes": 9
+        },
+        {
+          "seed": 43,
+          "affinity_best": -8.043,
+          "rmsd_best_pose": 0.89,
+          "rmsd_min_over_modes": 0.89,
+          "n_modes": 9
+        },
+        {
+          "seed": 44,
+          "affinity_best": -7.931,
+          "rmsd_best_pose": 0.938,
+          "rmsd_min_over_modes": 0.938,
+          "n_modes": 9
+        },
+        {
+          "seed": 45,
+          "affinity_best": -7.991,
+          "rmsd_best_pose": 0.998,
+          "rmsd_min_over_modes": 0.998,
+          "n_modes": 9
+        },
+        {
+          "seed": 46,
+          "affinity_best": -7.869,
+          "rmsd_best_pose": 1.068,
+          "rmsd_min_over_modes": 1.068,
+          "n_modes": 9
+        }
+      ],
+      "rmsd_top_median": 0.938,
+      "n_seeds_within_2A": 5,
+      "n_seeds": 5,
+      "reference_affinity_mean": -7.975,
+      "verdict": "PASS"
+    }
+  }
+}

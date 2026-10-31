@@ -1,0 +1,10 @@
+system,rep,target,mol_id,ligand_resname,dyad,n_frames,d_dyad_mean,d_dyad_first,d_dyad_last,d_dyad_max,site_occupancy,rmsd_lig_mean_from_phase4,rmsd_prot_mean_from_phase4,mindist_mean_from_phase4,hbond_occupancy_from_phase4
+pool_mol_057__6W63__primary,r1,6W63,pool_mol_057,MOL,His41+Cys145,501,2.727,2.453,2.498,3.772,1.0,4.361,1.789,0.1732,1.0
+pool_mol_057__6W63__primary,r2,6W63,pool_mol_057,MOL,His41+Cys145,501,2.408,2.902,2.651,3.406,1.0,2.8338,1.8507,0.1739,1.0
+pool_mol_057__6W63__primary,r3,6W63,pool_mol_057,MOL,His41+Cys145,501,2.608,2.271,2.554,3.175,1.0,1.8262,1.7952,0.1756,0.998
+pool_mol_074__6W63__primary,r1,6W63,pool_mol_074,MOL,His41+Cys145,501,2.333,2.167,2.544,3.08,1.0,2.5766,2.0931,0.1971,0.9441
+pool_mol_074__6W63__primary,r2,6W63,pool_mol_074,MOL,His41+Cys145,501,2.438,2.722,2.389,3.152,1.0,2.4027,2.0547,0.1869,0.8024
+pool_mol_074__6W63__primary,r3,6W63,pool_mol_074,MOL,His41+Cys145,501,2.434,2.545,2.46,2.855,1.0,2.3911,2.4456,0.1964,0.982
+pool_mol_279__6W63__primary,r1,6W63,pool_mol_279,MOL,His41+Cys145,501,2.627,2.78,2.62,4.149,1.0,1.9505,1.6059,0.1804,1.0
+pool_mol_279__6W63__primary,r2,6W63,pool_mol_279,MOL,His41+Cys145,501,2.313,2.154,2.168,3.438,1.0,2.6869,1.8694,0.1798,0.99
+pool_mol_279__6W63__primary,r3,6W63,pool_mol_279,MOL,His41+Cys145,501,2.461,3.195,2.415,4.417,1.0,3.3518,2.259,0.1856,0.7884

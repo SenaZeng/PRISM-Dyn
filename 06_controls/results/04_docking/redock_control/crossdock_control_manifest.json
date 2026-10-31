@@ -1,0 +1,78 @@
+{
+  "module": "node04_crossdock_control",
+  "created_at_utc": "2026-07-30T10:37:35Z",
+  "purpose": "distinguish per-receptor scoring offset from genuine binding difficulty",
+  "vina_sha256": "f31f774f723bba7bbe6e9d1c47577020eea9a8da16424284c043d22593570644",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "exhaustiveness": 32,
+  "num_modes": 9,
+  "matrix": [
+    {
+      "ligand": "X77",
+      "target": "3V3M",
+      "mean_affinity": -8.2992,
+      "self_dock": false
+    },
+    {
+      "ligand": "X77",
+      "target": "4YLU",
+      "mean_affinity": -8.9678,
+      "self_dock": false
+    },
+    {
+      "ligand": "X77",
+      "target": "6W63",
+      "mean_affinity": -8.5212,
+      "self_dock": true
+    },
+    {
+      "ligand": "0EN",
+      "target": "3V3M",
+      "mean_affinity": -7.6794,
+      "self_dock": true
+    },
+    {
+      "ligand": "0EN",
+      "target": "4YLU",
+      "mean_affinity": -7.3424,
+      "self_dock": false
+    },
+    {
+      "ligand": "0EN",
+      "target": "6W63",
+      "mean_affinity": -8.028,
+      "self_dock": false
+    },
+    {
+      "ligand": "R30",
+      "target": "3V3M",
+      "mean_affinity": -7.174,
+      "self_dock": false
+    },
+    {
+      "ligand": "R30",
+      "target": "4YLU",
+      "mean_affinity": -7.9754,
+      "self_dock": true
+    },
+    {
+      "ligand": "R30",
+      "target": "6W63",
+      "mean_affinity": -7.7612,
+      "self_dock": false
+    }
+  ],
+  "per_receptor_baseline": {
+    "3V3M": -7.7175,
+    "4YLU": -8.0952,
+    "6W63": -8.1035
+  },
+  "baseline_spread_kcal_per_mol": 0.3859,
+  "least_favourable_receptor": "3V3M"
+}
