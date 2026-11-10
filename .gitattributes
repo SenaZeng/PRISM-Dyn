@@ -1,1 +1,4 @@
+# 本文件由 stage_githubdyn.py v1.7 生成，每次组装重写。
+# 一概不做行尾转换：本存档随档发布 MANIFEST.sha256，
+# 若 git 按本地 core.autocrlf 改写行尾，该清单在 clone 之后便核不过。
 * -text

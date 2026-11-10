@@ -1,0 +1,27 @@
+{
+ "arm": "md_solv_v3_ref",
+ "p4_root": "results/step6e_solv_v3_ref",
+ "dyad": {
+  "3V3M": [
+   41,
+   145
+  ],
+  "4YLU": [
+   41,
+   148
+  ],
+  "6W63": [
+   41,
+   145
+  ]
+ },
+ "site_cut_angstrom": 5.0,
+ "stride": 10,
+ "n_trajectories": 12,
+ "threshold_provenance": "site_occupancy 判据 = 配体任一原子到催化二元体任一原子的最小镜像距离 <= 5.0 Å 的帧占比。**该 5.0 Å 阈值为事后选定**，记录中无任何预登记条目在数值上定义「逃逸」（依 D13 须随结果声明）。",
+ "registration": "claude/PRISM_Dyn_V3_B81_prereg.md · 冻结 2026-10-29 09:42 UTC · §A 可执行条款 · §B §3 第 7 项（His163 列，仅作描述）",
+ "only_filter": [],
+ "is_subset": false,
+ "extra_resid": {},
+ "extra_resid_note": "descriptive only; no threshold attached; does not modify the gate verdict; the two count columns reuse the registered 5.0 A cut and introduce no new cut-point (prereg §B item 7)"
+}

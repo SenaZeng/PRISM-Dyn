@@ -1,4 +1,4 @@
-# 本文件由 stage_githubdyn.py v1.4 生成，每次组装重写。
+# 本文件由 stage_githubdyn.py v1.7 生成，每次组装重写。
 # 第二道防线：即便误拷，也不入 git
 *.cpt
 *.edr
@@ -15,12 +15,13 @@
 *.zip
 
 # npz 的窄例外（见 README「逐帧 d_dyad 序列」一节）。
-# 上面的 `*.npz` 本会把这 177 份逐帧序列一并挡在 git 之外；
+# 上面的 `*.npz` 本会把这 189 份逐帧序列一并挡在 git 之外；
 # 它们是读者检验 5.0 Å 这一事后阈值的唯一凭据，故逐目录放行。
 !**/aud_b81_scope9_series/*.npz
 !**/aud_cross_site_occupancy_series/*.npz
 !**/aud_main_site_occupancy_his163_series/*.npz
 !**/aud_main_site_occupancy_series/*.npz
+!**/aud_ref_site_occupancy_series/*.npz
 
 # Jupyter 的 checkpoint 目录 —— 它不是产物，不入存档亦不入 git
 .ipynb_checkpoints/

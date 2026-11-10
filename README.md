@@ -1,12 +1,12 @@
-# PRISM-Dyn V3 —— 稿件配套数据与代码
+# PRISM-Dyn V3 — Data and code accompanying the manuscript
 
-> 本目录由 `stage_githubdyn.py` v1.3 组装。**待补**：引文、许可、与稿件各节的对应表。
+> This directory was assembled by `stage_githubdyn.py` v1.7. **Still to be added**: the citation, and a map from the deposit to the sections of the manuscript.
 
-## 边界
+## Scope
 
-本存档收录核验本稿主张所必需者。生成侧模型（解码器权重、代理模型、训练脚本）**不在此处**，理由见 `EXCLUSIONS.md`。轨迹文件因体积归 Zenodo。
+This deposit contains what is required to check the claims made in the manuscript. The generative-side models (decoder weights, surrogate models, training scripts) are **not here**; the reasons are given in `EXCLUSIONS.md`. Trajectory files are held separately on account of their size.
 
-## 目录
+## Directories
 
 - `01_scoring/`
 - `02_md_inputs/`
@@ -18,56 +18,57 @@
 - `08_pool_and_prep/`
 - `09_notebooks/`
 
-## 跨正构酶臂的六轴表：为何不在此处，以及如何重建
+## The six-axis table for the cross-ortholog arm: why it is not here, and how to rebuild it
 
-`cross_six_axis_SOLV_V3.csv` **是派生物，故不单独存档**。它可自本存档 `05_cross_ortholog/` 下的三份逐值重建：
+`cross_six_axis_SOLV_V3.csv` **is a derived product and is therefore not deposited separately.** It can be rebuilt value-for-value from three files under `05_cross_ortholog/` in this deposit:
 
-- `phase3_cross_dG_aggregated_SOLV_V3.csv`（ΔG 与 σ）
-- `phase4_cross_structural_SOLV_V3.csv`（距离 · 占有率 · RMSD）
-- `aud_cross_site_occupancy.csv`（逐复本的位点占据）
+- `phase3_cross_dG_aggregated_SOLV_V3.csv` (ΔG and σ)
+- `phase4_cross_structural_SOLV_V3.csv` (distance · occupancy · RMSD)
+- `aud_cross_site_occupancy.csv` (per-replica site occupancy)
 
-其七列（`dG_PBSA_mean` · `sigma_PBSA` · `n_rep` · `rmsd_prot_mean` · `rmsd_lig_mean` · `mindist_mean` · `hbond_occupancy`）即前两份按 (`mol_id`, `target`) 联接之结果，**逐值全同**（已实测核对）。余三列自第三份按下列定义重算，亦**逐值全同**：
+Seven of its columns (`dG_PBSA_mean` · `sigma_PBSA` · `n_rep` · `rmsd_prot_mean` · `rmsd_lig_mean` · `mindist_mean` · `hbond_occupancy`) are the result of joining the first two files on (`mol_id`, `target`), and agree **value for value** (verified by direct comparison). The remaining three columns are recomputed from the third file under the definitions below, and likewise agree **value for value**:
 
-- `occ_min` —— 逐复本 `site_occupancy` 之**最小值**
-- `d_dyad_max` —— 逐复本 `d_dyad_mean` 之**最大值**——即「逐复本均值的最大」，**不是**逐帧真最大（§3.6.2 的列名已照此）
-- `escaped` —— `site_occupancy` < 0.50 的**复本数**
+- `occ_min` — the **minimum** of the per-replica `site_occupancy`
+- `d_dyad_max` — the **maximum** of the per-replica `d_dyad_mean`, that is, the largest of the per-replica means. It is **not** the true per-frame maximum (the column heading in §3.6.2 follows this reading)
+- `escaped` — the **number of replicas** with `site_occupancy` < 0.50
 
-**这三条定义须与数据一同引用。** 少了它们，上述「可重建」只是一句无从检验的断言；`d_dyad_max` 尤其易被误读为逐帧的真最大值。
+**These three definitions must be cited together with the data.** Without them, the claim that the table "can be rebuilt" is an assertion no reader can test; `d_dyad_max` in particular is easily misread as a true per-frame maximum.
 
-## 逐帧 d_dyad 序列（`*_series/*.npz`）：为何随档发布
+## Per-frame d_dyad series (`*_series/*.npz`): why they are released with the deposit
 
-`site_occupancy` 的判据是「配体任一原子到催化二元体任一原子的最小镜像距离 ≤ **5.0 Å** 的帧占比」，而**该 5.0 Å 阈值为事后选定**——记录中没有任何预登记条目在数值上定义过「逃逸」。此点已载于各份 `.meta.json` 的 `threshold_provenance`。
+The criterion for `site_occupancy` is the fraction of frames in which the minimum image distance from any ligand atom to any atom of the catalytic dyad is ≤ **5.0 Å**, and **that 5.0 Å threshold was chosen after the fact** — nothing in the record pre-registers a numerical definition of "escape". This is recorded in the `threshold_provenance` field of each `.meta.json`.
 
-既然阈值是事后定的，只给出按该阈值算成的占有率，读者便只能照抄我们选的那一个数。故逐帧序列随档发布：**它们使读者得以按任何别的阈值重算，从而检验结论对该选择的依赖程度。**
+Since the threshold was chosen after the fact, giving only the occupancies computed under it would leave a reader no option but to adopt the one value we chose. The per-frame series are therefore released with the deposit: **they allow a reader to recompute the measure at any other threshold, and so to test how far the conclusions depend on that choice.**
 
-每份 `.npz` 载 `d_dyad`（逐帧标量，单位 nm）、`start`、`stride` 与 `dyad_resids`。**它们不是轨迹**，不含任何坐标；轨迹归 Zenodo。
+Each `.npz` carries `d_dyad` (a per-frame scalar, in nm), `start`, `stride` and `dyad_resids`. **They are not trajectories** and contain no coordinates; the trajectories are held separately.
 
-| 目录 | 份数 | 对应 |
+| Directory | Count | Contents |
 |---|---|---|
-| `aud_b81_scope9_series/` | 9 | §B8.1 门禁 9 条的逐帧 d_dyad |
-| `aud_cross_site_occupancy_series/` | 36 | 跨臂逐帧 d_dyad（AMD-2 之后的 36 条） |
-| `aud_main_site_occupancy_his163_series/` | 33 | his163 子集逐帧 d_dyad 与 d_extra |
-| `aud_main_site_occupancy_series/` | 99 | 主臂逐帧 d_dyad |
+| `aud_b81_scope9_series/` | 9 | per-frame d_dyad for the 9 replicas under the §B8.1 gate |
+| `aud_cross_site_occupancy_series/` | 36 | per-frame d_dyad for the cross-ortholog arm (the 36 replicas after AMD-2) |
+| `aud_main_site_occupancy_his163_series/` | 33 | per-frame d_dyad and d_extra for the His163 subset |
+| `aud_main_site_occupancy_series/` | 99 | per-frame d_dyad for the main arm |
+| `aud_ref_site_occupancy_series/` | 12 | per-frame d_dyad for the reference arm |
 
-**另有一个 `aud_cross_site_series/`（30 份，2026-10-19）不在此处**：它是跨正构酶臂达到 36 条之前那一代的序列，其 CSV 与 sidecar 已不存。排除之凭据为份数与 mtime 两事，理由见 `EXCLUSIONS.md`。
+**A further directory, `aud_cross_site_series/` (30 files, 2026-10-19), is not here**: it holds the series from the generation preceding the cross-ortholog arm's 36 replicas, and its CSV and sidecar no longer exist. The grounds for excluding it are the file count and the mtime; the reasoning is in `EXCLUSIONS.md`.
 
-## 三处须随存档一同声明者
+## Three matters that must be stated alongside the deposit
 
-### 1 · 一处须声明的继承文字
+### 1 · One piece of inherited text that requires a statement
 
-`aud_cross_site_occupancy.meta.json` 的 `registration` 字段引了一条关于 **His163 列**的预登记条款（prereg §B 第 7 项），而该产物自身的 `extra_resid` 为空、并无 His163 列。**那是脚本默认值带来的继承文字，不可据以认定跨正构酶臂的审计曾按该条款预登记。** 该条款实际所指者为 `aud_main_site_occupancy_his163.*`——那一份确有该列，且确在其范围之内。此处不就地改写该 sidecar：它是一份带有日期的产物，而为更正一个文本字段重跑 36 条轨迹，是不值的交换。
+The `registration` field of `aud_cross_site_occupancy.meta.json` cites a pre-registration clause concerning the **His163 column** (prereg §B, item 7), while the product itself has an empty `extra_resid` and no His163 column. **That is inherited text arising from a script default, and it must not be taken to show that the cross-ortholog arm's audit was pre-registered under that clause.** The clause in fact refers to `aud_main_site_occupancy_his163.*`, which does have that column and does fall within its scope. The sidecar is not rewritten in place here: it is a dated product, and re-running 36 trajectories to correct one text field is not a worthwhile exchange.
 
-### 2 · 一个从未存在过的目录名
+### 2 · A directory name that never existed
 
-跨臂三份 notebook 的 `ALLOWED_ARMS` 中有一项 **`md_cross_solv_v3`**，而该目录**从未存在过**：MD 阶段试错多次、目录一概保留未删，但没有一个叫这个名字。它是从假定写出来的，并经 `make_cross_notebooks.py` 与 `core/patch_phase_arm_derived.py` 两处传开。
+The `ALLOWED_ARMS` set in six of the notebooks contains an entry **`md_cross_solv_v3`**, and that directory **has never existed**: the MD stage went through many attempts and every directory was kept rather than deleted, but none was ever given that name. It was written from an assumption, and propagated through both `make_cross_notebooks.py` and `core/patch_phase_arm_derived.py`.
 
-**此条刻意不从代码中删去。** 删掉一个从无任何 notebook 用作 `ARM` 的元素，不会改变 `set(ARMS) <= ALLOWED_ARMS` 的结果；而留着它，读者便看得见一个臆造之名是如何在一套流程里传开的。真实的臂名有三：主臂 `md_solv_v3`、参照臂 `md_solv_v3_ref`、跨正构酶臂 `cross_solv_v3`。
+**This entry is deliberately not removed from the code.** Deleting an element that no notebook has ever used as `ARM` would not change the outcome of `set(ARMS) <= ALLOWED_ARMS`; leaving it in place lets a reader see how an invented name propagated through a pipeline. There are three real arm names: the main arm `md_solv_v3`, the reference arm `md_solv_v3_ref`, and the cross-ortholog arm `cross_solv_v3`.
 
-### 3 · 主臂 notebook 的臂切换
+### 3 · Arm switching in the main-arm notebooks
 
-`phase2_pbc_correct_V3.ipynb` · `phase3_mmpbsa_solv_V3.ipynb` · `phase4_analysis_solv_V3.ipynb` 三份各服务多条臂，切换只改 cell 1 的一行：`ARM = EXPECTED_ARM = "…"`，该行自带注释说明。**随档交付的三份皆设为主臂 `md_solv_v3`**（2026-10-31 校正：其中两份此前停在 `md_solv_v3_ref`，而其散文与存留输出皆为主臂）。取参照臂只须把那一行改为 `md_solv_v3_ref`。
+`phase2_pbc_correct_V3.ipynb` · `phase3_mmpbsa_solv_V3.ipynb` · `phase4_analysis_solv_V3.ipynb` each serve more than one arm; switching means changing a single line in cell 1, `ARM = EXPECTED_ARM = "…"`, and that line carries its own explanatory comment. **All three are delivered set to the main arm `md_solv_v3`** (corrected 2026-10-31: two of them had previously been left at `md_solv_v3_ref`, while their prose and retained outputs were those of the main arm). To take the reference arm, change that one line to `md_solv_v3_ref`.
 
-## 两处须随存档一同声明的隐患
+## Two hazards that must be stated alongside the deposit
 
-1. `phase4_analysis_solv_V3.ipynb` 在 cell 2 与 cell 5 各定义一次 `STRIDE = 10`；二者值同，故此刻无误，但重复定义的常数一旦其一被单独修改即成危害。
-2. `aud_frame_census.py` 的 C3 已作废：其 C3 与 VERDICT 不得引用，C1 与 C2 仍立。终端标记普查请用 `07_audit/aud_terminal_markers.py`（它识别 `[MD2 DONE]` 与 `[RESUME DONE]` 两种合法终态）。
+1. `phase4_analysis_solv_V3.ipynb` defines `STRIDE = 10` twice, once in cell 2 and once in cell 5. The two values agree, so nothing is wrong at present, but a constant defined twice becomes a hazard as soon as one of the definitions is changed on its own.
+2. C3 of `aud_frame_census.py` is withdrawn: its C3 and VERDICT must not be cited, while C1 and C2 still stand. For a census of terminal markers use `07_audit/aud_terminal_markers.py`, which recognises both legitimate terminal states, `[MD2 DONE]` and `[RESUME DONE]`.

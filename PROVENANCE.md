@@ -1,15 +1,15 @@
-# 本存档的生成记录
+# Assembly record for this deposit
 
 **status: COMPLETE**
 
 | | |
 |---|---|
-| 生成时间 | 2026-10-31 20:44:30 +0800 |
-| 主机 | gpu01 |
-| lang2 根 | `/mnt/hpc/home/wanghongmei/lang2` |
-| 组装脚本 | `stage_githubdyn.py` v1.4，sha256 `74a90f9005e6d7ce72eec080fec164ba85b87775117d6ec2e53f49bc4197fb4a` |
-| 文件数 | 616（新拷 0、内容相同而跳过 616） |
+| Assembled | 2026-11-06 20:12:14 +0800 |
+| Host | gpu01 |
+| lang2 root | `/mnt/hpc/home/wanghongmei/lang2` |
+| Assembly script | `stage_githubdyn.py` v1.7, sha256 `7e8747e21187e50f12bde932289961eb16f0f1337b32f19bc9ab9958b6291805` |
+| File count | 643 (12 newly copied, 631 skipped as identical in content) |
 
-每个文件的源路径与 sha256 见 `MANIFEST.sha256`；刻意排除者见 `EXCLUSIONS.md`；未找到者见 `NOT_FOUND.md`。
+The source path and sha256 of every file are in `MANIFEST.sha256`; deliberate exclusions are in `EXCLUSIONS.md`; items not found are in `NOT_FOUND.md`.
 
-**项数如何核对**：本脚本的只读报告逐条目印出其**每一条模式**的命中数与其合计，故仓库内的文件数可逐模式对回 lang2 内的源。
+**How the counts are checked**: the script's read-only report prints, for **each of its patterns**, the number of matches and their total, so that the file count in the repository can be reconciled pattern by pattern against the sources under lang2.

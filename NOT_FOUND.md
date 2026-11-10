@@ -1,14 +1,13 @@
-# 清单中未找到者，连同所检索的全部名字
+# Items in the inventory that were not found, together with every name searched
 
-生成于 2026-10-31 20:44:30 +0800
+Generated 2026-11-06 20:12:14 +0800
 
-> 规则 23：凡以「未找到」为前提的陈述，须载明范围与所用的名字。**证据之缺不等于其物不存在。** 下列各项在所列模式下未命中，须以不同的名字或不同的层级复检一次，方可断言其不存在。
+> Rule 23: any statement resting on "not found" must record its scope and the names used. **Absence of evidence is not absence of the thing.** Each item below failed to match under the patterns listed, and must be checked once more under a different name or at a different level before its non-existence can be asserted.
 
-## `05_cross_ortholog` [可选]
+## `05_cross_ortholog` [optional]
 
-跨臂六轴表（**不存亦可**，因已证可自本节三份复现；三条派生定义已写入 README）
+The cross-arm six-axis table (**need not be deposited**, since it has been shown to be reproducible from the three files in this section; the three derived definitions are written into the README)
 
-已试模式（alt）：
+Patterns tried (alt):
 - `results/cross_six_axis_SOLV_V3.csv`
 - `Scoring/cross_six_axis*.csv`
-
