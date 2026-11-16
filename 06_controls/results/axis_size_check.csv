@@ -1,0 +1,8 @@
+quantity,column,slope_per_heavy_atom,r,p,n
+d_min,mindist_mean,-0.0002,-0.051,0.7867,31
+dG_PBSA,dG_PBSA_mean,0.3296,0.244,0.1860,31
+H_occ,hbond_occupancy,0.0122,0.332,0.0677,31
+sigma_PBSA,sigma_PBSA,0.0984,0.228,0.2175,31
+RMSD_prot,rmsd_prot_mean,-0.0023,-0.031,0.8671,31
+RMSD_lig,rmsd_lig_mean,0.1479,0.195,0.2934,31
+F(Γ),COMPASS_v3,-0.1023,-0.049,0.7930,31

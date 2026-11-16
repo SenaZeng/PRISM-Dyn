@@ -644,3 +644,15 @@ f0e584e7b32613e71ca82d7cf38819ebe8255e732409d40d1b129847f9981ac8  09_notebooks/S
 2a9860a577839c4fe1d6356f7ab6ad1c1e44c7159c0f0371ada5874e4aa1f778  09_notebooks/phase2_pbc_correct_V3.ipynb  <-  phase2_pbc_correct_V3.ipynb
 6ecc05f00ca61bd2dc5b9e7c3d9352149b233e4c939ba67ebcdd1810b596ee3d  09_notebooks/phase3_mmpbsa_solv_V3.ipynb  <-  phase3_mmpbsa_solv_V3.ipynb
 240bf0b9c9cc6778f2cd4dd4cb080a395910fa1bfa713074dadbbc7f3785bc12  09_notebooks/phase4_analysis_solv_V3.ipynb  <-  phase4_analysis_solv_V3.ipynb
+0fdb2f40b6d0dcde4aa1b74249eedd4ce98918a89dd4bb962f25987c71dfcc5a  06_controls/results/REGISTERED_CRITERION.txt  <-  Scoring/solv_alt_2026-11-16/REGISTERED_CRITERION.txt
+0fcc5928ee24338cdf2bfa00d32682a33eed90d4051cae6eaa8f921c491afb7b  06_controls/results/B_REGISTERED_CRITERION.txt  <-  Scoring/solv_alt_2026-11-16/B_REGISTERED_CRITERION.txt
+4e36e704d397e2e4d297396baba71fc882030804a924d156c9100d8ddd3c9d64  06_controls/results/B_CRITERION.sha256  <-  Scoring/solv_alt_2026-11-16/B_CRITERION.sha256
+385442aa1025e0dc2a54589f012ea6c6f13b81758980a6e7b8a9ba82bf54cf64  06_controls/results/A_gb_per_replica_TOTAL.csv  <-  Scoring/solv_alt_2026-11-16/A_gb_per_replica_TOTAL.csv
+62a321deeb36d3bd9d3f364bc783043dc49efde211f1eb1af1d7ebec27699776  06_controls/results/A_gb_VERDICT.txt  <-  Scoring/solv_alt_2026-11-16/A_gb_VERDICT.txt
+5eb6c3c0f4b845de30300f9b7183134832d44bddc6f7ba23e493d8614380d033  06_controls/results/B_inp1_per_replica_TOTAL.csv  <-  Scoring/solv_alt_2026-11-16/B_inp1_per_replica_TOTAL.csv
+7a6a69b639c7a76c471e5477e94eb3ea91500371b6df8980e90ffe426fb4c387  06_controls/results/B_inp1_VERDICT.txt  <-  Scoring/solv_alt_2026-11-16/B_inp1_VERDICT.txt
+107ffe336a4074bd78e441b536fc3692dcacfebd47c601ff76cffe96fedce09a  06_controls/results/ref_panel_PB_per_replica_TOTAL.csv  <-  Scoring/solv_alt_2026-11-16/ref_panel_PB_per_replica_TOTAL.csv
+acc2e468d78da8d440127227c077891c490f4359430fc38188d18bf77a37458d  06_controls/results/step7_pbsa_inp1_2026-11-16.in  <-  Scoring/solv_alt_2026-11-16/step7_pbsa_inp1_2026-11-16.in
+f0fc41cccfea9a22304bc5cc65bc747f499ff77851603715a3c795941c0a6ff7  06_controls/results/size_regress_PB_vs_GB.csv  <-  Scoring/solv_alt_2026-11-16/size_regress_PB_vs_GB.csv
+81b667a214fe9559cae43313affd0447d661b69005162cc78a26a5f049020f28  06_controls/results/axis_size_check.csv  <-  Scoring/solv_alt_2026-11-16/axis_size_check.csv
+26439d5b722c93252c4bf6d47889c8a42ad0ff793af3727e4628345d3bb1a100  06_controls/results/CONTROLS_2026-11-16.md  <-  Scoring/solv_alt_2026-11-16/CONTROLS_2026-11-16.md

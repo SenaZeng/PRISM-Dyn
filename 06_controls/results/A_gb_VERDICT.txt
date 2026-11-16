@@ -1,0 +1,10 @@
+实验 A 判定 · 参考臂广义 Born 端点 · 2026-11-16
+判准文件 sha256 0fdb2f40b6d0dcde4aa1b74249eedd4ce98918a89dd4bb962f25987c71dfcc5a（判定时核过，未变）
+
+ref_AVI_1084__6W63__primary        n=3  GB  -37.0767  PB   -9.0167
+ref_X77__6W63__nearnative          n=3  GB  -37.2967  PB   -0.5267
+ref_X77__6W63__primary             n=3  GB  -32.9667  PB   +1.3333
+ref_ensitrelvir__6W63__primary     n=3  GB  -41.9433  PB   -2.5333
+
+ensitrelvir - AVI_1084 ：GB -4.8667 ／ PB +6.4800
+判定：通过（符号恢复）
