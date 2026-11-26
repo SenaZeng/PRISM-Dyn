@@ -1,0 +1,7 @@
+axis,max_partner,max_abs_rho,independence,phys_importance,direction,raw_w,W_rederived_31primary,W_published_V3,delta
+d_min,RMSD_lig,0.4432,0.5568,4,-1,-2.2272,-2.0,-2.0,0.0
+H_occ,d_min,0.4403,0.5597,3,1,1.6791,1.5078,1.51,-0.0022
+RMSD_prot,d_min,0.3192,0.6808,2,-1,-1.3616,-1.2227,-1.22,-0.0027
+dG_PBSA,RMSD_lig,0.5698,0.4302,5,-1,-2.1512,-1.9317,-1.93,-0.0017
+sigma_PBSA,RMSD_lig,0.2907,0.7093,2,-1,-1.4185,-1.2738,-1.27,-0.0038
+RMSD_lig,dG_PBSA,0.5698,0.4302,3,-1,-1.2907,-1.159,-1.16,0.001

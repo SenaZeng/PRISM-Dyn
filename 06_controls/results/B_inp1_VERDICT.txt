@@ -1,0 +1,10 @@
+实验 B 判定 · 参考臂 PB inp=1 · 2026-11-16
+判准文件 sha256 0fcc5928ee24338cdf2bfa00d32682a33eed90d4051cae6eaa8f921c491afb7b（判定时核过，未变）
+
+ref_AVI_1084__6W63__primary        n=3  GB  -30.6367  PB   -9.0167
+ref_X77__6W63__nearnative          n=3  GB  -29.4767  PB   -0.5267
+ref_X77__6W63__primary             n=3  GB  -25.7167  PB   +1.3333
+ref_ensitrelvir__6W63__primary     n=3  GB  -33.5633  PB   -2.5333
+
+ensitrelvir - AVI_1084 ：GB -2.9267 ／ PB +6.4833
+判定：通过（符号恢复）

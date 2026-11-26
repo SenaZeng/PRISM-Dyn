@@ -1,0 +1,32 @@
+{
+  "module": "drv_gbsa_crossval",
+  "action": "build",
+  "built_at_utc": "2026-10-15T15:04:26.484999+00:00",
+  "config": {
+    "path": "/mnt/hpc/home/wanghongmei/lang2/step7_gbsa_solv.in",
+    "sha256": "6d5fce826da2d7f3efba76e5533f488fabd3dedb4e899cdddcd4dbf325d2019d",
+    "startframe": 5001,
+    "endframe": 10000,
+    "interval": 25,
+    "frames_per_replica": 200,
+    "same_frames_as_pbsa": true
+  },
+  "n_systems": 33,
+  "n_tasks": 99,
+  "trajectory": "md_fit.xtc",
+  "groups_resolved_by_name": [
+    "Protein",
+    "MOL"
+  ],
+  "group_numbers_observed": {
+    "1,13": 99
+  },
+  "partition": "cpuPartition",
+  "cpus": 8,
+  "time": "04:00:00",
+  "throttle": 8,
+  "deviations_from_v2": [
+    "groups resolved by name from ndx_groups.json, not hardcoded -cg 1 13",
+    "cpuPartition instead of gpu (sander is CPU-bound; GPUs are in use by the cross-ortholog arm)"
+  ]
+}

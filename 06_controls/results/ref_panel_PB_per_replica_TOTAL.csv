@@ -1,0 +1,13 @@
+system,rep,TOTAL,src
+ref_AVI_1084__6W63__primary,r1,-9.68,results/step7_solv_v3_ref/pbsa/ref_AVI_1084__6W63__primary/r1/FINAL_RESULTS.dat
+ref_AVI_1084__6W63__primary,r2,-8.63,results/step7_solv_v3_ref/pbsa/ref_AVI_1084__6W63__primary/r2/FINAL_RESULTS.dat
+ref_AVI_1084__6W63__primary,r3,-8.74,results/step7_solv_v3_ref/pbsa/ref_AVI_1084__6W63__primary/r3/FINAL_RESULTS.dat
+ref_X77__6W63__nearnative,r1,-4.29,results/step7_solv_v3_ref/pbsa/ref_X77__6W63__nearnative/r1/FINAL_RESULTS.dat
+ref_X77__6W63__nearnative,r2,3.58,results/step7_solv_v3_ref/pbsa/ref_X77__6W63__nearnative/r2/FINAL_RESULTS.dat
+ref_X77__6W63__nearnative,r3,-0.87,results/step7_solv_v3_ref/pbsa/ref_X77__6W63__nearnative/r3/FINAL_RESULTS.dat
+ref_X77__6W63__primary,r1,2.1,results/step7_solv_v3_ref/pbsa/ref_X77__6W63__primary/r1/FINAL_RESULTS.dat
+ref_X77__6W63__primary,r2,-3.23,results/step7_solv_v3_ref/pbsa/ref_X77__6W63__primary/r2/FINAL_RESULTS.dat
+ref_X77__6W63__primary,r3,5.13,results/step7_solv_v3_ref/pbsa/ref_X77__6W63__primary/r3/FINAL_RESULTS.dat
+ref_ensitrelvir__6W63__primary,r1,-0.66,results/step7_solv_v3_ref/pbsa/ref_ensitrelvir__6W63__primary/r1/FINAL_RESULTS.dat
+ref_ensitrelvir__6W63__primary,r2,-3.75,results/step7_solv_v3_ref/pbsa/ref_ensitrelvir__6W63__primary/r2/FINAL_RESULTS.dat
+ref_ensitrelvir__6W63__primary,r3,-3.19,results/step7_solv_v3_ref/pbsa/ref_ensitrelvir__6W63__primary/r3/FINAL_RESULTS.dat

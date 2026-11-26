@@ -1,0 +1,5 @@
+mol_dir,rmsd_prot_mean,rmsd_lig_mean,mindist_mean,hbond_occupancy,n_rep
+ref_AVI_1084__6W63__primary,2.2089,1.6696,0.1873,0.9734,3
+ref_X77__6W63__nearnative,2.1895,2.7824,0.1939,0.8383,3
+ref_X77__6W63__primary,2.0468,7.4077,0.1994,0.8377,3
+ref_ensitrelvir__6W63__primary,1.8282,1.9517,0.1977,0.9967,3

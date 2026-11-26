@@ -1,0 +1,35 @@
+# Date of creation: 2026-04-09 20:24:13.167474
+result_path: /mnt/hpc/home/wanghongmei/lang2/core/results/mpro_vae_train_struct_0409
+data_path: /mnt/hpc/home/wanghongmei/lang2/core/frattvae_source/data/mpro_vae_train.csv
+frag_path: null
+seed: 0
+decomp:
+  min_size: 1
+  max_nfrags: 16
+  n_bits: 2048
+  dupl_bits: 0
+  radius: 2
+  max_depth: 16
+  max_degree: 8
+  useChiral: true
+  ignore_double: true
+  ignore_dummy: false
+model:
+  d_model: 512
+  d_ff: 2048
+  nlayer: 6
+  nhead: 8
+  latent: 256
+  feat: 2048
+  property: {}
+  ploss: bce
+  activation: gelu
+  dropout: 0.1
+train:
+  epoch: 100
+  batch_size: 64
+  lr: 0.0001
+  kl_w: 0.0005
+  kl_anneal: {}
+  l_w: 2.0
+  p_w: 1.0
